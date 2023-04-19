@@ -1,0 +1,181 @@
+---
+title: "Lupine manuscript"
+author: "Becca Evans"
+date: "2023-04-19"
+output: html_document
+---
+
+Vegetation cover
+```{r}
+library(lattice)
+library(ggplot2)
+library(cowplot)
+library(dplyr)
+library(lme4)
+library(lmerTest)
+library(emmeans) #allows post hoc tests for lmer
+```
+
+#data
+veg survey
+
+#models
+###leafminer damage####
+```{r}
+hist(lupdata.byplot$lfmnr.pct)
+
+#sqrt transform improves residual behavior and results in lower p-value
+mod1 <- lmer(sqrt(lfmnr.pct) ~ treatment + (1|block), data=lupdata.byplot)
+anova(mod1)
+summary(mod1)
+plot(mod1)
+qqnorm(resid(mod1)) #excellent
+lsmeans(mod1, list(pairwise ~ treatment), adjust = "tukey")
+
+```
+
+#####lupine percent cover#####
+```{r}
+hist((lupdata.byplot$lup.pct))
+mod2 <- lmer((lup.pct) ~ treatment + (1|block), data=lupdata.byplot)
+anova(mod2)
+summary(mod2)
+lsmeans(mod2, list(pairwise ~ treatment), adjust = "tukey")
+lsmeans::lsmeans(mod2, "treatment")
+plot(mod2) 
+qqnorm(resid(mod2))  
+qqline(resid(mod2))
+```
+
+
+
+###vascular cover###
+```{r}
+hist((lupdata.byplot$vasc.pct))
+mod3 <- lmer((vasc.pct) ~ treatment + (1|block), data=lupdata.byplot)
+anova(mod3)
+summary(mod3)
+lsmeans(mod3, list(pairwise ~ treatment), adjust = "tukey")
+lsmeans::lsmeans(mod3, "treatment")
+plot(mod3)
+
+```
+
+
+#Moss
+```{r}
+hist((lupdatat.byplot$moss.pct))
+mod4 <- lmer((moss.pct) ~ treatment + (1|block), data=lupdata.byplot)
+anova(mod4)
+summary(mod4)
+plot(mod4)
+
+```
+
+#bare
+```{r}
+hist((lupdata.byplot$bare.pct))
+mod5 <- lmer((bare.pct) ~ treatment + (1|block), data=lupdata.byplot)
+anova(mod5)
+summary(mod5)
+lsmeans::lsmeans(mod5, "treatment")
+plot(mod5)
+
+```
+
+
+###soil C,N, d13c, d15n, microbial C
+
+data=soil
+
+#models
+ 
+Full model response~treat*month*location*depth*loc+(1|block)
+use step() to select best models presented here 
+
+soil C
+```{r}
+soil_c <- lmer(log(c)~treat+month+loc+depth+month+treat:loc+treat:depth+(1|block),data=data)
+anova(soil_c)
+summary(soil_c)
+plot(soil_c) 
+qqnorm(resid(soil_c))  
+```
+
+post hoc soil c loc
+```{r}
+emmeans(soil_c, pairwise ~ treat | loc, type="response")
+```
+
+post hoc soil c depth 
+```{r}
+emmeans(soil_c, pairwise ~ treat | depth, type="response")
+```
+
+soil n NO EFFECTS
+```{r}
+soil_n <- lmer(log(n)~treat+loc+depth+month+(1|block),data=data)
+n <- anova(soil_n)
+summary(soil_n)
+plot(soil_n) 
+qqnorm(resid(soil_n)
+
+```
+
+soil d13c
+```{r}
+soil_d13c <- lmer(d13c~treat+month+loc+depth+month+treat:loc+treat:depth+(1|block),data=data)
+c <- anova(soil_d13c)
+summary(soil_d13c)
+plot(soil_d13c) 
+qqnorm(resid(soil_d13c))  
+
+```
+
+
+post hoc soil d13c loc
+```{r}
+emmeans(soil_d13c, pairwise ~ loc, type="response")
+```
+
+soil d15n NO EFFECTS
+```{r}
+soil_d15n <- lmer(d15n~treat+month+loc+depth+month+treat:loc+treat:depth+(1|block),data=data)
+a <- anova(soil_d15n)
+summary(soil_d15n)
+plot(soil_d15n) 
+qqnorm(resid(soil_d15n))  
+
+```
+
+
+microbial C
+```{r}
+microbe_c <- lmer(sqrt(microbial.C+1)~treat+month+loc+depth+treat:loc+treat:depth+treat:month+(1|block),data=data)
+m <- anova(microbe_c)
+summary(microbe_c)
+plot(microbe_c) 
+qqnorm(resid(microbe_c)) 
+
+```
+
+
+post hoc microbial c treatment
+```{r}
+emmeans(microbe_c, pairwise ~ treat, type="response")
+```
+
+post hoc microbial c loc*treat interaction
+```{r}
+emmeans(microbe_c, pairwise ~ loc|treat, type="response")
+```
+
+post hoc microbial c loc interaction
+```{r}
+emmeans(microbe_c, pairwise ~ loc, type="response")
+```
+
+post hoc microbial c date interaction
+```{r}
+emmeans(microbe_c, pairwise ~ month, type="response")
+```

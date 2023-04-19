@@ -1,0 +1,97 @@
+month,block,treat,loc,depth,d13c,c,d15n,n,microbial.C
+Aug,1,Control,Interspace,Surface,-23.47,4.2789584,-0.01,0.6474117,0.558545226
+Aug,2,Control,Interspace,Surface,-26.22,2.076479,-3.97,0.2012438,0.42
+Aug,3,Control,Interspace,Surface,-27.17,1.7475632,-1.91,0.1685259,1.819139058
+Aug,4,Control,Interspace,Surface,-27.97,1.5802577,-2.14,0.8242754,0.59061657
+July,1,Control,Interspace,Surface,-23.25,4.0452538,-1.05,2.4949203,2.137478054
+July,2,Control,Interspace,Surface,-26.22,4.3893457,-3.24,0.4540018,1.130033061
+July,3,Control,Interspace,Surface,-27.16,3.7815716,-2.64,0.393984,1.15
+July,4,Control,Interspace,Surface,-27.93,1.5845225,-1.43,1.0319178,1.01
+Aug,1,Herbiv.Exc,Interspace,Surface,-25.87,1.2773327,-4.09,0.1549603,2.3
+Aug,2,Herbiv.Exc,Interspace,Surface,-26.55,5.1637013,-2.34,0.4318252,2.281276793
+Aug,3,Herbiv.Exc,Interspace,Surface,-27.39,2.2102188,-4.05,0.1627632,1.4
+Aug,4,Herbiv.Exc,Interspace,Surface,-28.3,1.3072421,-0.8,0.6799071,1.34
+July,1,Herbiv.Exc,Interspace,Surface,-25.81,1.8245029,-3.65,0.1415105,1.374726512
+July,2,Herbiv.Exc,Interspace,Surface,-26.42,1.4973291,-3.39,0.1250447,2.061455093
+July,3,Herbiv.Exc,Interspace,Surface,-27.38,3.9054283,-2.62,0.2673067,1.1
+July,4,Herbiv.Exc,Interspace,Surface,-28.26,2.3002294,-0.64,1.2009481,1
+Aug,1,Lupine Rem.,Interspace,Surface,-26.16,3.9672125,-2.43,0.7925739,0
+Aug,2,Lupine Rem.,Interspace,Surface,-26.74,4.7020372,-3.34,0.4354126,0
+Aug,3,Lupine Rem.,Interspace,Surface,-27.66,0.0783364,-0.86,0.5678169,0
+Aug,4,Lupine Rem.,Interspace,Surface,-26.48,1.1415193,-1.04,0.9357022,0
+July,1,Lupine Rem.,Interspace,Surface,-25.3,1.234,-1.89,0.348776,0
+July,2,Lupine Rem.,Interspace,Surface,-26.72,3.9998313,-3.02,0.3865171,0
+July,3,Lupine Rem.,Interspace,Surface,-26.64,1.7515929,-2.05,0.6280607,0
+July,4,Lupine Rem.,Interspace,Surface,-26.38,1.4819848,-0.69,0.8236977,0
+Aug,1,Control,Under Lupine,Surface,-25.57,1.7116744,-3.24,0.1873979,0.546311706
+Aug,2,Control,Under Lupine,Surface,-28.19,2.0237306,-0.99,1.3131466,0.783358082
+Aug,3,Control,Under Lupine,Surface,-27.28,8.3330612,-1.84,0.6321815,1.9
+Aug,4,Control,Under Lupine,Surface,-28.18,4.5830082,-2.98,0.2701843,0.442489899
+July,1,Control,Under Lupine,Surface,-28.42,0.1516041,-2.94,0.1867322,2.514636972
+July,2,Control,Under Lupine,Surface,-29.28,4.23111,-2.5,0.3456723,3.633995151
+July,3,Control,Under Lupine,Surface,-26.28,5.5963847,-2.9,0.4735038,2.785614769
+July,4,Control,Under Lupine,Surface,-28.15,8.5224663,-1.41,0.9221504,1.01
+Aug,1,Herbiv.Exc,Under Lupine,Surface,-27.4,0.03456,-1.432,0.53345,2
+Aug,2,Herbiv.Exc,Under Lupine,Surface,-28.53,0.04556,-2.56,0.43256,1.799294717
+Aug,3,Herbiv.Exc,Under Lupine,Surface,-27.53,0.0724917,-1.345,0.6202014,2
+Aug,4,Herbiv.Exc,Under Lupine,Surface,-27.5,0.745633,-1.345,0.6345632,1.3
+July,1,Herbiv.Exc,Under Lupine,Surface,-26.02,5.0613966,-1.68,0.4235619,2
+July,2,Herbiv.Exc,Under Lupine,Surface,-26.68,3.077256,-2.13,0.2432152,2.080102901
+July,3,Herbiv.Exc,Under Lupine,Surface,-27.53,8.8253416,-2.63,0.7256499,3.28468311
+July,4,Herbiv.Exc,Under Lupine,Surface,-28.32,2.0715882,-0.69,1.2493539,1.2
+Aug,1,Lupine Rem.,Under Lupine,Surface,-27.86,1.4948869,-1.08,0.9677358,0.671937231
+Aug,2,Lupine Rem.,Under Lupine,Surface,-25,4.1745221,-1.33,0.3020242,0.4
+Aug,3,Lupine Rem.,Under Lupine,Surface,-26.93,3.5653238,-2.22,0.4361385,1.748756441
+Aug,4,Lupine Rem.,Under Lupine,Surface,-26.4,3.7541837,-2.34,0.5191536,0.34
+July,1,Lupine Rem.,Under Lupine,Surface,-25.1,0.3455,-1,0.087199,0.65
+July,2,Lupine Rem.,Under Lupine,Surface,-26.9,1.4971079,-1.47,0.1652416,0.66
+July,3,Lupine Rem.,Under Lupine,Surface,-27.82,0.0869202,-1.195,0.6095962,3.396845397
+July,4,Lupine Rem.,Under Lupine,Surface,-28.4,4.6641037,-2.01,0.560171,0.7
+Aug,1,Control,Interspace,Depth (10cm),-25.27,2.9822241,-4.81,0.152295,0.54
+Aug,2,Control,Interspace,Depth (10cm),-26.28,4.6875506,-1.33,1.8083067,0.55
+Aug,3,Control,Interspace,Depth (10cm),-27.28,4.1923355,-1.48,0.9347774,1.7046777
+Aug,4,Control,Interspace,Depth (10cm),-28.14,1.5263417,-0.97,0.7700838,0.584873954
+July,1,Control,Interspace,Depth (10cm),-24.46,2.3322145,-4.6,0.187098,2.315814489
+July,2,Control,Interspace,Depth (10cm),-26.26,4.0054584,-0.88,0.269066,1.516275867
+July,3,Control,Interspace,Depth (10cm),-27.22,4.9803405,-2.1,0.4273838,1.42
+July,4,Control,Interspace,Depth (10cm),-28.11,1.4665855,-0.64,1.2746278,1.2
+Aug,1,Herbiv.Exc,Interspace,Depth (10cm),-26,3.6591926,-3,1.0395095,0
+Aug,2,Herbiv.Exc,Interspace,Depth (10cm),-26.61,1.4143065,-4.6,0.0984166,0
+Aug,3,Herbiv.Exc,Interspace,Depth (10cm),-27.52,4.1194707,-2.43,0.295348,0
+Aug,4,Herbiv.Exc,Interspace,Depth (10cm),-28.31,4.5140926,0.25,3.0849716,0
+July,1,Herbiv.Exc,Interspace,Depth (10cm),-25.9,1.887703,-2.4,0.1729535,1.446382813
+July,2,Herbiv.Exc,Interspace,Depth (10cm),-26.58,2.8454373,-2.76,0.2104087,1.478253013
+July,3,Herbiv.Exc,Interspace,Depth (10cm),-27.49,1.9740814,-1.15,1.5005747,1.6
+July,4,Herbiv.Exc,Interspace,Depth (10cm),-28.3,8.9114466,-0.75,0.6525648,1.5
+Aug,1,Lupine Rem.,Interspace,Depth (10cm),-25.4,0.012345,-1,0.3422,0
+Aug,2,Lupine Rem.,Interspace,Depth (10cm),-26.8,0.9551956,-1.59,0.6366368,0
+Aug,3,Lupine Rem.,Interspace,Depth (10cm),-27.4,1.331168,-1,0.9545739,0
+Aug,4,Lupine Rem.,Interspace,Depth (10cm),-28.4,0.017753,-0.16,3.0325767,0
+July,1,Lupine Rem.,Interspace,Depth (10cm),-26.18,2.857306,-3.98,0.2410935,0
+July,2,Lupine Rem.,Interspace,Depth (10cm),-26.4,2.154653,-2.74,0.2069306,0
+July,3,Lupine Rem.,Interspace,Depth (10cm),-26.74,0.13345,-1.26,0.12453,0
+July,4,Lupine Rem.,Interspace,Depth (10cm),-26.5,1.1740981,-1.02,1.3955808,0
+Aug,1,Control,Under Lupine,Depth (10cm),-25.73,6.0101284,-1.66,0.4728725,0.562429417
+Aug,2,Control,Under Lupine,Depth (10cm),-26.39,6.1479305,-2.78,0.5120318,0.8
+Aug,3,Control,Under Lupine,Depth (10cm),-27.36,5.4903249,-2.68,0.6879266,1.8
+Aug,4,Control,Under Lupine,Depth (10cm),-26.29,1.6071396,-1.09,0.1404468,0.582078683
+July,1,Control,Under Lupine,Depth (10cm),-25.64,1.5903708,-3.4,0.4030005,1.584786054
+July,2,Control,Under Lupine,Depth (10cm),-26.28,5.6812094,-0.88,0.2944173,1.516275867
+July,3,Control,Under Lupine,Depth (10cm),-27.32,6.9026306,-1.5,0.6874464,2.76861834
+July,4,Control,Under Lupine,Depth (10cm),-28.24,1.4120921,-1.36,1.1027452,1.2
+Aug,1,Herbiv.Exc,Under Lupine,Depth (10cm),-26.1,3.111982,-3.55,0.3113958,1.7
+Aug,2,Herbiv.Exc,Under Lupine,Depth (10cm),-26.72,3.7359235,-3.92,0.2748784,1.587724897
+Aug,3,Herbiv.Exc,Under Lupine,Depth (10cm),-27.57,11.1252031,-1.66,0.9359255,2.5
+Aug,4,Herbiv.Exc,Under Lupine,Depth (10cm),-28.37,4.571971,-0.17,2.3263535,2.4
+July,1,Herbiv.Exc,Under Lupine,Depth (10cm),-26.04,1.7204419,-3.53,0.1512012,1.347276493
+July,2,Herbiv.Exc,Under Lupine,Depth (10cm),-26.69,3.574328,-4,0.3409291,6.444006809
+July,3,Herbiv.Exc,Under Lupine,Depth (10cm),-27.57,5.9865603,-1.52,0.4216354,2.1
+July,4,Herbiv.Exc,Under Lupine,Depth (10cm),-28.37,7.8675122,-1.4,0.5095429,2
+Aug,1,Lupine Rem.,Under Lupine,Depth (10cm),-28.4,0.23571,-0.32,1.6315112,0.8
+Aug,2,Lupine Rem.,Under Lupine,Depth (10cm),-27.13,4.6187203,-2.62,0.401332,0.6
+Aug,3,Lupine Rem.,Under Lupine,Depth (10cm),-27.1,1.1432066,-0.99,1.1153987,0.326852092
+Aug,4,Lupine Rem.,Under Lupine,Depth (10cm),-27.11,3.5662947,-1.6,0.3450607,0.531365963
+July,1,Lupine Rem.,Under Lupine,Depth (10cm),-28.21,1.8830743,-2.06,0.1957772,1
+July,2,Lupine Rem.,Under Lupine,Depth (10cm),-27.02,3.5251501,-1.64,0.2156444,1.2
+July,3,Lupine Rem.,Under Lupine,Depth (10cm),-27.88,2.1362723,-2.1,0.7157766,3
+July,4,Lupine Rem.,Under Lupine,Depth (10cm),-27.61,4.386988,-0.68,0.3724729,1.1
