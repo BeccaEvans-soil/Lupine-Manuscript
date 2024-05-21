@@ -1,0 +1,47 @@
+month,treat,loc,depth,site,d13c,c,d15n,n,microbial.C,block
+July,Control,Interspace,Depth (10cm),july1cid,-24.46,2.3322145,-4.6,0.187098,2.315814489,1
+July,Control,Interspace,Surface,july1cisu,-23.25,4.0452538,-1.05,2.4949203,2.137478054,1
+July,Control,Under Lupine,Depth (10cm),july1cld,-25.64,1.5903708,-3.4,0.4030005,1.584786054,1
+July,Control,Under Lupine,Surface,july1clsu,-28.42,0.1516041,-2.94,0.1867322,2.514636972,1
+July,Lupine Rem.,Interspace,Depth (10cm),july1rid,-26.18,2.857306,-3.98,0.2410935,0,1
+July,Lupine Rem.,Interspace,Surface,july1risu,-25.3,1.234,-1.89,0.348776,0,1
+July,Lupine Rem.,Under Lupine,Depth (10cm),july1rld,-28.21,1.8830743,-2.06,0.1957772,1,1
+July,Lupine Rem.,Under Lupine,Surface,july1rlsu,-25.1,0.3455,-1,0.087199,0.65,1
+July,Herbiv.Exc,Interspace,Depth (10cm),july1sid,-25.9,1.887703,-2.4,0.1729535,1.446382813,1
+July,Herbiv.Exc,Interspace,Surface,july1sisu,-25.81,1.8245029,-3.65,0.1415105,1.374726512,1
+July,Herbiv.Exc,Under Lupine,Depth (10cm),july1sld,-26.04,1.7204419,-3.53,0.1512012,1.347276493,1
+July,Herbiv.Exc,Under Lupine,Surface,july1slsu,-26.02,5.0613966,-1.68,0.4235619,2,1
+July,Control,Interspace,Depth (10cm),july2cid,-26.26,4.0054584,-0.88,0.269066,1.516275867,2
+July,Control,Interspace,Surface,july2cisu,-26.22,4.3893457,-3.24,0.4540018,1.130033061,2
+July,Control,Under Lupine,Depth (10cm),july2cld,-26.28,5.6812094,-0.88,0.2944173,1.516275867,2
+July,Control,Under Lupine,Surface,july2clsu,-29.28,4.23111,-2.5,0.3456723,3.633995151,2
+July,Lupine Rem.,Interspace,Depth (10cm),july2rid,-26.4,2.154653,-2.74,0.2069306,0,2
+July,Lupine Rem.,Interspace,Surface,july2risu,-26.72,3.9998313,-3.02,0.3865171,0,2
+July,Lupine Rem.,Under Lupine,Depth (10cm),july2rld,-27.02,3.5251501,-1.64,0.2156444,1.2,2
+July,Lupine Rem.,Under Lupine,Surface,july2rlsu,-26.9,1.4971079,-1.47,0.1652416,0.66,2
+July,Herbiv.Exc,Interspace,Depth (10cm),july2sid,-26.58,2.8454373,-2.76,0.2104087,1.478253013,2
+July,Herbiv.Exc,Interspace,Surface,july2sisu,-26.42,1.4973291,-3.39,0.1250447,2.061455093,2
+July,Herbiv.Exc,Under Lupine,Depth (10cm),july2sld,-26.69,3.574328,-4,0.3409291,6.444006809,2
+July,Herbiv.Exc,Under Lupine,Surface,july2slsu,-26.68,3.077256,-2.13,0.2432152,2.080102901,2
+July,Control,Interspace,Depth (10cm),july3cid,-27.22,4.9803405,-2.1,0.4273838,1.42,3
+July,Control,Interspace,Surface,july3cisu,-27.16,3.7815716,-2.64,0.393984,1.15,3
+July,Control,Under Lupine,Depth (10cm),july3cld,-27.32,6.9026306,-1.5,0.6874464,2.76861834,3
+July,Control,Under Lupine,Surface,july3clsu,-26.28,5.5963847,-2.9,0.4735038,2.785614769,3
+July,Lupine Rem.,Interspace,Depth (10cm),july3rid,-26.74,0.13345,-1.26,0.12453,0,3
+July,Lupine Rem.,Interspace,Surface,july3risu,-26.64,1.7515929,-2.05,0.6280607,0,3
+July,Lupine Rem.,Under Lupine,Depth (10cm),july3rld,-27.88,2.1362723,-2.1,0.7157766,3,3
+July,Herbiv.Exc,Interspace,Depth (10cm),july3sid,-27.49,1.9740814,-1.15,1.5005747,1.6,3
+July,Herbiv.Exc,Interspace,Surface,july3sisu,-27.38,3.9054283,-2.62,0.2673067,1.1,3
+July,Herbiv.Exc,Under Lupine,Depth (10cm),july3sld,-27.57,5.9865603,-1.52,0.4216354,2.1,3
+July,Herbiv.Exc,Under Lupine,Surface,july3slsu,-27.53,8.8253416,-2.63,0.7256499,3.28468311,3
+July,Control,Interspace,Depth (10cm),july4cid,-28.11,1.4665855,-0.64,1.2746278,1.2,4
+July,Control,Interspace,Surface,july4cisu,-27.93,1.5845225,-1.43,1.0319178,1.01,4
+July,Control,Under Lupine,Depth (10cm),july4cld,-28.24,1.4120921,-1.36,1.1027452,1.2,4
+July,Control,Under Lupine,Surface,july4clsu,-28.15,8.5224663,-1.41,0.9221504,1.01,4
+July,Lupine Rem.,Interspace,Depth (10cm),july4rid,-26.5,1.1740981,-1.02,1.3955808,0,4
+July,Lupine Rem.,Interspace,Surface,july4risu,-26.38,1.4819848,-0.69,0.8236977,0,4
+July,Lupine Rem.,Under Lupine,Depth (10cm),july4rld,-27.61,4.386988,-0.68,0.3724729,1.1,4
+July,Herbiv.Exc,Interspace,Depth (10cm),july4sid,-28.3,8.9114466,-0.75,0.6525648,1.5,4
+July,Herbiv.Exc,Interspace,Surface,july4sisu,-28.26,2.3002294,-0.64,1.2009481,1,4
+July,Herbiv.Exc,Under Lupine,Depth (10cm),july4sld,-28.37,7.8675122,-1.4,0.5095429,2,4
+July,Herbiv.Exc,Under Lupine,Surface,july4slsu,-28.32,2.0715882,-0.69,1.2493539,1.2,4
