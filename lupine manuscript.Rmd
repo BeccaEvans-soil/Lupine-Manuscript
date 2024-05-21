@@ -229,6 +229,8 @@ micro_aug <- read_csv("diversity_aug1.csv") %>%
 july_env_full <- read.csv("bulk_soil_BE 24Jun2018_july.csv")
 aug_env_full <- read.csv("bulk_soil_BE 24Jun2018_aug.csv")
 
+
+##JULY
 ###richness
 
 sppr <- specnumber(micro_july)
@@ -279,6 +281,109 @@ plot_shannon <- ggplot(shan_df, aes(x = treat, y = value, fill = treat)) +
   
   labs(x = "",
        y = "Shannon Diversity")
+
+
+
+july_micro <- read.csv("diversity_july_select.csv", row.names = 1)
+july_env<- read.csv("july_env_select.csv")
+
+aug_micro <- read.csv("aug_diversity_select.csv",row.names = 1)
+aug_env <- read.csv("aug_env_select.csv")
+names(july_env)
+
+july_dist <- vegdist(july_micro, method="bray")
+
+
+names(july_env)
+
+
+july_perm <- adonis2(july_micro~treat+loc+depth+d13c_mean+d15n_mean+c_mean+n_mean ,data=july_env, permutations = 999, method="bray")
+july_perm
+
+dispersion <- betadisper(july_dist, group=july_env$treat)
+permutest(dispersion)
+
+dispersion <- betadisper(july_dist, group=july_env$loc)
+permutest(dispersion)
+
+dispersion <- betadisper(july_dist, group=july_env$depth)
+permutest(dispersion)
+
+
+###AUGUST
+
+##Richness
+
+sppr <- specnumber(micro_aug)
+sppr
+
+sppr_mod <- lmer(sppr~treat+(1|block), data=aug_env_full)
+summary(sppr_mod )
+anova(sppr_mod )
+
+#plot
+sppr_df <- sppr %>% 
+  enframe() %>% 
+  full_join(aug_env_full, by = c("name" = "site"))
+
+
+
+names(sppr_df)
+
+pal <- c("grey73", "black", "grey57")
+
+plot_sppr <- ggplot(sppr_df, aes(x = treat, y = value, fill = treat)) +
+  geom_boxplot() +
+  #scale_fill_manual(values = pal) +
+  scale_color_manual(values=pal, breaks=c("c","r","s"), labels=c("Control", "Lupine Rem.", "Herbiv.Exc"))+
+  
+  labs(x = "",
+       y = "Number of PLFA")
+
+
+plot_sppr
+
+
+#shannon
+shannondiv <- vegan::diversity(micro_aug)
+shannondiv
+
+shan_div_mod <- lmer(shannondiv~treat+(1|block), data=aug_env_full)
+summary(shan_div_mod )
+anova(shan_div_mod )
+
+#plot
+
+shan_df <- shannondiv %>% 
+  enframe() %>% 
+  full_join(aug_env_full, by = c("name" = "site"))
+
+
+
+
+pal <- c("lightsalmon1", "gold1", "palegreen4")
+
+plot_shannon <- ggplot(shan_df, aes(x = treat, y = value, fill = treat)) +
+  geom_boxplot() +
+  scale_color_manual(values=pal, breaks=c("c","r","s"), labels=c("Control", "Lupine Rem.", "Herbiv.Exc"))+
+  
+  labs(x = "",
+       y = "Shannon Diversity")
+
+
+##PERMANOVA
+aug_micro <- read.csv("aug_diversity_select.csv", row.names = 1)
+aug_env<- read.csv("aug_env_select.csv")
+
+
+
+aug_dist <- vegdist(aug_micro, method="bray")
+
+aug_perm <- adonis2(aug_micro~treat+loc+depth+d13c_mean+d15n_mean+c_mean+n_mean ,data=aug_env, permutations = 999, method="bray")
+aug_perm
+
+dispersion <- betadisper(aug_dist, group=aug_env$d13c_mean)
+permutest(dispersion)
 
 
 
