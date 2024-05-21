@@ -1,4 +1,4 @@
----
+ive cover csv---
 title: "Lupine manuscript"
 author: "Becca Evans"
 date: "2023-04-19"
@@ -17,7 +17,7 @@ library(emmeans) #allows post hoc tests for lmer
 ```
 
 #data
-veg survey
+#veg survey vegetative cover.csv
 
 #models
 ###leafminer damage####
@@ -86,7 +86,7 @@ plot(mod5)
 
 ###soil C,N, d13c, d15n, microbial C
 
-data=soil
+#data=soil.csv
 
 #models
  
@@ -173,9 +173,50 @@ emmeans(microbe_c, pairwise ~ loc|treat, type="response")
 post hoc microbial c loc interaction
 ```{r}
 emmeans(microbe_c, pairwise ~ loc, type="response")
+
 ```
 
 post hoc microbial c date interaction
 ```{r}
 emmeans(microbe_c, pairwise ~ month, type="response")
 ```
+
+
+##look at just interspaces treatment effects
+```{r}
+int <- data %>% filter(loc=="Interspace")
+microbe_c_int <- lmer(sqrt(microbial.C+1)~treat+month+depth+treat:depth+treat:month+(1|block),data=int)
+m <- anova(microbe_c_int)
+write.csv(m, "m.csv")
+summary(microbe_c_int)
+plot(microbe_c_int) 
+qqnorm(resid(microbe_c_int)) 
+
+```
+
+post hoc microbial c treat 
+```{r}
+emmeans(microbe_c_int, pairwise ~ treat, type="response")
+```
+
+##look at justunder lupine treatment effects
+```{r}
+lup <- data %>% filter(loc=="Under Lupine")
+microbe_c_lup <- lmer(sqrt(microbial.C+1)~treat+month+depth+treat:depth+treat:month+(1|block),data=lup)
+m <- anova(microbe_c_lup)
+write.csv(m, "m.csv")
+summary(microbe_c_lup)
+plot(microbe_c_lup) 
+qqnorm(resid(microbe_c_lup)) 
+
+```
+
+post hoc microbial c treat 
+```{r}
+emmeans(microbe_c_lup, pairwise ~ treat, type="response")
+```
+
+
+
+
+
