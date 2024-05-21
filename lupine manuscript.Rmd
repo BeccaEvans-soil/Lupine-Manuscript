@@ -216,6 +216,69 @@ post hoc microbial c treat
 emmeans(microbe_c_lup, pairwise ~ treat, type="response")
 ```
 
+###############
+####microbial community composition 
+
+#data
+micro_july <- read_csv("diversity_july1.csv") %>% 
+  column_to_rownames("site")
+
+micro_aug <- read_csv("diversity_aug1.csv") %>% 
+  column_to_rownames("site")
+
+july_env_full <- read.csv("bulk_soil_BE 24Jun2018_july.csv")
+aug_env_full <- read.csv("bulk_soil_BE 24Jun2018_aug.csv")
+
+###richness
+
+sppr <- specnumber(micro_july)
+sppr
+
+sppr_mod <- lmer(sppr~treat+(1|block), data=july_env_full)
+summary(sppr_mod )
+anova(sppr_mod )
+
+#plot
+sppr_df <- sppr %>% 
+  enframe() %>% 
+  full_join(july_env_full, by = c("name" = "site"))
+
+pal <- c("lightsalmon1", "gold1", "palegreen4")
+
+plot_sppr <- ggplot(sppr_df, aes(x = treat, y = value, fill = treat)) +
+  geom_boxplot() +
+  scale_color_manual(values=pal, breaks=c("c","r","s"), labels=c("Control", "Lupine Rem.", "Herbiv.Exc"))+
+  
+  labs(x = "",
+       y = "Number of PLFA")
+
+     
+plot_sppr
+
+#shannon
+shannondiv <- vegan::diversity(micro_july)
+shannondiv
+
+shan_div_mod <- lmer(shannondiv~treat+(1|block), data=july_env_full)
+summary(shan_div_mod )
+anova(shan_div_mod )
+
+#plot
+
+shan_df <- shannondiv %>% 
+  enframe() %>% 
+  full_join(july_env_full, by = c("name" = "site"))
+
+
+
+pal <- c("lightsalmon1", "gold1", "palegreen4")
+
+plot_shannon <- ggplot(shan_df, aes(x = treat, y = value, fill = treat)) +
+  geom_boxplot() +
+  scale_color_manual(values=pal, breaks=c("c","r","s"), labels=c("Control", "Lupine Rem.", "Herbiv.Exc"))+
+  
+  labs(x = "",
+       y = "Shannon Diversity")
 
 
 
